@@ -1,5 +1,10 @@
+@font-face{
+  font-family:"Multicolore";
+  src:url("pirulen rg.ttf") format("truetype");
+}
+
 body{
-  margin:0; font-family:Arial;
+  margin:0; font-family: "Arial";
 }
 .experience {
   position: fixed;
@@ -39,16 +44,17 @@ body{
 /* for text */
 #div1 {
     width:35%;
-    height:70%;
+    height:20%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     left: 8vmax;
     color: #ffffff;
     cursor: pointer;
     text-align: center;
     transition: 0.001s;
+    font-family: "Multicolore";
 }
 
 #div2 {
@@ -57,12 +63,14 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
+
 }
 
 #div3 {
@@ -71,12 +79,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     left: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div4 {
@@ -85,12 +94,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div5 {
@@ -99,12 +109,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     left: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div6 {
@@ -113,12 +124,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div7 {
@@ -127,12 +139,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     left: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div8 {
@@ -141,12 +154,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div9 {
@@ -155,12 +169,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     left: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 #div10 {
@@ -169,12 +184,13 @@ body{
     height:70%;
     background-color: #00000000;
     position: fixed;
-    z-index: 5000;
+    z-index: 4000;
     top: 40%;
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
     text-align: center;
+    font-family: "Multicolore";
 }
 
 /* for navigation bar */
@@ -184,6 +200,7 @@ body{
   z-index: 5000;
   position: fixed;
   right: 0;
+  font-family: "Multicolore";
 }
 
 .topnav a {
@@ -197,7 +214,7 @@ body{
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #5dbcd2;
   color: white;
   z-index: 5000;
 }
@@ -264,10 +281,16 @@ body{
     float: right;
     display: block;
   }
+  /*#div4{
+    right: 20vmax;
+  }
+  #div2{
+    right:20vmax;
+  }*/
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed; background-color: #000000;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -279,7 +302,7 @@ body{
     text-align: left;
   }
   .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown-content {position: fixed;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -288,7 +311,7 @@ body{
 }
 
 /* for overlay */
-#overlay {
+#overlay1 {
   position: fixed;
   display: none;
   width: 100%;
@@ -303,7 +326,215 @@ body{
   overflow: auto;
 }
 
-#text{
+#text1{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #ffffff;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+  font-size: 1.75vmax;
+}
+#overlay2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text2{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay3 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text3{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay4 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text4{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay5 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text5{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay6 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text6{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay7 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text7{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay8 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text8{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay9 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text9{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  transform: translate(-5%,0);
+  -ms-transform: translate(-50%,-50%);
+}
+#overlay10 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 7000;
+  cursor: pointer;
+  overflow: auto;
+}
+
+#text10{
   position: absolute;
   top: 10%;
   left: 10%;
@@ -363,3 +594,5 @@ body{
     width: 100%;
   }
 }
+
+ 

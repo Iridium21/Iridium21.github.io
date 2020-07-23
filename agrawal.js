@@ -90,7 +90,7 @@ renderer.setSize(ww, wh);
 
 //Create an empty scene
 var scene = new THREE.Scene();
-scene.fog = new THREE.Fog(0x000000,0,100);
+scene.fog = new THREE.Fog(0x5dbcd2,0,150);
 
 var clock = new THREE.Clock();
 
@@ -153,7 +153,7 @@ path.tension = .5;
 //Create a new geometry with a different radius
 var geometry = new THREE.TubeGeometry( path, 300, 4, 32, false );
 
-var texture = new THREE.TextureLoader().load( 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/3d_space_5.jpg' , function ( texture ) {
+var texture = new THREE.TextureLoader().load( 'https://wallpaperplay.com/walls/full/4/7/b/40696.jpg' , function ( texture ) {
 
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.offset.set( 0, 0 );
@@ -394,6 +394,8 @@ $(document).mousemove(function(evt) {
   cameraRotationProxyY = Mathutils.map(evt.clientY, 0, window.innerHeight, -.1, .1);
 });
 
+
+
 /* my javascript code */
 /* for scrolling */
 $(window).scroll(function () {
@@ -509,4 +511,18 @@ $(window).scroll(function () {
         $("#div10").css('visibility', 'hidden');
     }
 });
+
+
+
+  $(window).scroll(function(){
+    $("#div1").css("left", (200-$(window).scrollTop()));
+    $("#div1").css("opacity",1-$(window).scrollTop()/750);
+  });
+$(window).scroll(function(){
+    $("#div2").css("opacity", 1 - ($(window).scrollTop()-750) / 1050);
+  });
+
+
+
 });
+
