@@ -398,7 +398,8 @@ $(document).mousemove(function(evt) {
 
 /* my javascript code */
 /* for scrolling */
-$(window).scroll(function () {
+if(screen.width>=600){
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 8100) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
@@ -487,7 +488,7 @@ $(window).scroll(function () {
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 750) {
+    } else if ($(this).scrollTop() > 900) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'visible');
         $("#div3").css('visibility', 'hidden');
@@ -511,17 +512,245 @@ $(window).scroll(function () {
         $("#div10").css('visibility', 'hidden');
     }
 });
+}
+else{
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 6300) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'visible');
+    } else if ($(this).scrollTop() > 5600) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'visible');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 4900) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'visible');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 4200) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'visible');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 3500) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'visible');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 2800) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'visible');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 2100) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'visible');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 1400) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'visible');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else if ($(this).scrollTop() > 700) {
+        $("#div1").css('visibility', 'hidden');
+        $("#div2").css('visibility', 'visible');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    } else {
+        $("#div1").css('visibility', 'visible');
+        $("#div2").css('visibility', 'hidden');
+        $("#div3").css('visibility', 'hidden');
+        $("#div4").css('visibility', 'hidden');
+        $("#div5").css('visibility', 'hidden');
+        $("#div6").css('visibility', 'hidden');
+        $("#div7").css('visibility', 'hidden');
+        $("#div8").css('visibility', 'hidden');
+        $("#div9").css('visibility', 'hidden');
+        $("#div10").css('visibility', 'hidden');
+    }
+});
+}
 
 
 
-  $(window).scroll(function(){
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div1").css("opacity",1-$(window).scrollTop()/900);
+  }else{
     $("#div1").css("left", (200-$(window).scrollTop()));
-    $("#div1").css("opacity",1-$(window).scrollTop()/750);
+    $("#div1").css("opacity",1-$(window).scrollTop()/900);
+  }
   });
 $(window).scroll(function(){
-    $("#div2").css("opacity", 1 - ($(window).scrollTop()-750) / 1050);
+  if(screen.width<=600){
+    $("#div2").css("opacity",1-($(window).scrollTop()-700)/900);
+  }
+  else{
+    if($(this).scrollTop()<1300){
+    $("#div2").css("right", (200));
+  }
+  else{
+    $("#div2").css("right", (1300-$(window).scrollTop()));
+    $("#div2").css("opacity",1-($(window).scrollTop()-1300)/900);
+  }
+  }
   });
-
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div3").css("opacity",1-($(window).scrollTop()-1400)/900);
+  }
+  else{
+    if($(this).scrollTop()<2200){
+    $("#div3").css("left", (200));
+  }
+  else{
+    $("#div3").css("left", (2200-$(window).scrollTop()));
+    $("#div3").css("opacity",1-($(window).scrollTop()-2200)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div4").css("opacity",1-($(window).scrollTop()-2100)/900);
+  }
+  else{
+    if($(this).scrollTop()<3100){
+    $("#div4").css("right", (200));
+  }
+  else{
+    $("#div4").css("right", (3100-$(window).scrollTop()));
+    $("#div4").css("opacity",1-($(window).scrollTop()-3100)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div5").css("opacity",1-($(window).scrollTop()-2800)/900);
+  }
+  else{
+    if($(this).scrollTop()<4000){
+    $("#div5").css("left", (200));
+  }
+  else{
+    $("#div5").css("left", (4000-$(window).scrollTop()));
+    $("#div5").css("opacity",1-($(window).scrollTop()-4000)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div6").css("opacity",1-($(window).scrollTop()-3500)/900);
+  }
+  else{
+    if($(this).scrollTop()<4900){
+    $("#div6").css("right", (200));
+  }
+  else{
+    $("#div6").css("right", (4900-$(window).scrollTop()));
+    $("#div6").css("opacity",1-($(window).scrollTop()-4900)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div7").css("opacity",1-($(window).scrollTop()-4200)/900);
+  }
+  else{
+    if($(this).scrollTop()<5800){
+    $("#div7").css("left", (200));
+  }
+  else{
+    $("#div7").css("left", (5800-$(window).scrollTop()));
+    $("#div7").css("opacity",1-($(window).scrollTop()-5800)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div8").css("opacity",1-($(window).scrollTop()-4900)/900);
+  }
+  else{
+    if($(this).scrollTop()<6700){
+    $("#div8").css("right", (200));
+  }
+  else{
+    $("#div8").css("right", (6700-$(window).scrollTop()));
+    $("#div8").css("opacity",1-($(window).scrollTop()-6700)/900);
+  }
+  }
+  });
+$(window).scroll(function(){
+  if(screen.width<=600){
+    $("#div9").css("opacity",1-($(window).scrollTop()-5600)/900);
+  }
+  else{
+    if($(this).scrollTop()<7600){
+    $("#div9").css("left", (200));
+  }
+  else{
+    $("#div9").css("left", (7600-$(window).scrollTop()));
+    $("#div9").css("opacity",1-($(window).scrollTop()-7600)/900);
+  }
+  }
+  });
 
 
 });
