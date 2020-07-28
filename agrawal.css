@@ -52,7 +52,7 @@ body{
     left: 8vmax;
     color: #ffffff;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     transition: 0.001s;
     font-family: "Multicolore";
 }

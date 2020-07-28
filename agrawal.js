@@ -400,7 +400,7 @@ $(document).mousemove(function(evt) {
 /* for scrolling */
 if(screen.width>=600){
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 8100) {
+    if ($(this).scrollTop() > 6400) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -411,7 +411,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'visible');
-    } else if ($(this).scrollTop() > 7200) {
+    } else if ($(this).scrollTop() > 5800) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -422,7 +422,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'visible');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 6300) {
+    } else if ($(this).scrollTop() > 5200) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -433,7 +433,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'visible');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 5400) {
+    } else if ($(this).scrollTop() > 4600) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -444,7 +444,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 4500) {
+    } else if ($(this).scrollTop() > 4000) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -455,7 +455,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 3600) {
+    } else if ($(this).scrollTop() > 3400) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -466,7 +466,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 2700) {
+    } else if ($(this).scrollTop() > 2800) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -477,7 +477,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 1800) {
+    } else if ($(this).scrollTop() > 1200) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'visible');
@@ -488,7 +488,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 900) {
+    } else if ($(this).scrollTop() > 600) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'visible');
         $("#div3").css('visibility', 'hidden');
