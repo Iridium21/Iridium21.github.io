@@ -316,7 +316,7 @@ var newPlace = 0;
 var spikeyTexture = new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/68819/spikey.png');
 
 
-var particleCount = 6800,
+var particleCount = 50000,
     particles1 = new THREE.Geometry(),
     particles2 = new THREE.Geometry(),
     particles3 = new THREE.Geometry(),
@@ -400,7 +400,7 @@ $(document).mousemove(function(evt) {
 /* for scrolling */
 if(screen.width>=600){
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 6400) {
+    if ($(this).scrollTop() > 5670) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -411,7 +411,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'visible');
-    } else if ($(this).scrollTop() > 5800) {
+    } else if ($(this).scrollTop() > 5040) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -422,7 +422,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'visible');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 5200) {
+    } else if ($(this).scrollTop() > 4410) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -433,7 +433,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'visible');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 4600) {
+    } else if ($(this).scrollTop() > 3780) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -444,7 +444,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 4000) {
+    } else if ($(this).scrollTop() > 3150) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -455,7 +455,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 3400) {
+    } else if ($(this).scrollTop() > 2520) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -466,7 +466,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 2800) {
+    } else if ($(this).scrollTop() > 1890) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'hidden');
@@ -477,7 +477,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 1200) {
+    } else if ($(this).scrollTop() > 1260) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'hidden');
         $("#div3").css('visibility', 'visible');
@@ -488,7 +488,7 @@ if(screen.width>=600){
         $("#div8").css('visibility', 'hidden');
         $("#div9").css('visibility', 'hidden');
         $("#div10").css('visibility', 'hidden');
-    } else if ($(this).scrollTop() > 600) {
+    } else if ($(this).scrollTop() > 630) {
         $("#div1").css('visibility', 'hidden');
         $("#div2").css('visibility', 'visible');
         $("#div3").css('visibility', 'hidden');
@@ -644,12 +644,12 @@ $(window).scroll(function(){
     $("#div2").css("opacity",1-($(window).scrollTop()-700)/900);
   }
   else{
-    if($(this).scrollTop()<1300){
+    if($(this).scrollTop()<830){
     $("#div2").css("right", (200));
   }
   else{
-    $("#div2").css("right", (1300-$(window).scrollTop()));
-    $("#div2").css("opacity",1-($(window).scrollTop()-1300)/900);
+    $("#div2").css("right", (830-$(window).scrollTop()));
+    $("#div2").css("opacity",1-($(window).scrollTop()-830)/900);
   }
   }
   });
@@ -658,12 +658,12 @@ $(window).scroll(function(){
     $("#div3").css("opacity",1-($(window).scrollTop()-1400)/900);
   }
   else{
-    if($(this).scrollTop()<2200){
+    if($(this).scrollTop()<1460){
     $("#div3").css("left", (200));
   }
   else{
-    $("#div3").css("left", (2200-$(window).scrollTop()));
-    $("#div3").css("opacity",1-($(window).scrollTop()-2200)/900);
+    $("#div3").css("left", (1460-$(window).scrollTop()));
+    $("#div3").css("opacity",1-($(window).scrollTop()-1460)/900);
   }
   }
   });
@@ -672,12 +672,12 @@ $(window).scroll(function(){
     $("#div4").css("opacity",1-($(window).scrollTop()-2100)/900);
   }
   else{
-    if($(this).scrollTop()<3100){
+    if($(this).scrollTop()<2090){
     $("#div4").css("right", (200));
   }
   else{
-    $("#div4").css("right", (3100-$(window).scrollTop()));
-    $("#div4").css("opacity",1-($(window).scrollTop()-3100)/900);
+    $("#div4").css("right", (2090-$(window).scrollTop()));
+    $("#div4").css("opacity",1-($(window).scrollTop()-2090)/900);
   }
   }
   });
@@ -686,12 +686,12 @@ $(window).scroll(function(){
     $("#div5").css("opacity",1-($(window).scrollTop()-2800)/900);
   }
   else{
-    if($(this).scrollTop()<4000){
+    if($(this).scrollTop()<2720){
     $("#div5").css("left", (200));
   }
   else{
-    $("#div5").css("left", (4000-$(window).scrollTop()));
-    $("#div5").css("opacity",1-($(window).scrollTop()-4000)/900);
+    $("#div5").css("left", (2720-$(window).scrollTop()));
+    $("#div5").css("opacity",1-($(window).scrollTop()-2720)/900);
   }
   }
   });
@@ -700,12 +700,12 @@ $(window).scroll(function(){
     $("#div6").css("opacity",1-($(window).scrollTop()-3500)/900);
   }
   else{
-    if($(this).scrollTop()<4900){
+    if($(this).scrollTop()<3350){
     $("#div6").css("right", (200));
   }
   else{
-    $("#div6").css("right", (4900-$(window).scrollTop()));
-    $("#div6").css("opacity",1-($(window).scrollTop()-4900)/900);
+    $("#div6").css("right", (3350-$(window).scrollTop()));
+    $("#div6").css("opacity",1-($(window).scrollTop()-3350)/900);
   }
   }
   });
@@ -714,12 +714,12 @@ $(window).scroll(function(){
     $("#div7").css("opacity",1-($(window).scrollTop()-4200)/900);
   }
   else{
-    if($(this).scrollTop()<5800){
+    if($(this).scrollTop()<3980){
     $("#div7").css("left", (200));
   }
   else{
-    $("#div7").css("left", (5800-$(window).scrollTop()));
-    $("#div7").css("opacity",1-($(window).scrollTop()-5800)/900);
+    $("#div7").css("left", (3980-$(window).scrollTop()));
+    $("#div7").css("opacity",1-($(window).scrollTop()-3980)/900);
   }
   }
   });
@@ -728,12 +728,12 @@ $(window).scroll(function(){
     $("#div8").css("opacity",1-($(window).scrollTop()-4900)/900);
   }
   else{
-    if($(this).scrollTop()<6700){
+    if($(this).scrollTop()<4610){
     $("#div8").css("right", (200));
   }
   else{
-    $("#div8").css("right", (6700-$(window).scrollTop()));
-    $("#div8").css("opacity",1-($(window).scrollTop()-6700)/900);
+    $("#div8").css("right", (4610-$(window).scrollTop()));
+    $("#div8").css("opacity",1-($(window).scrollTop()-4610)/900);
   }
   }
   });
@@ -742,12 +742,12 @@ $(window).scroll(function(){
     $("#div9").css("opacity",1-($(window).scrollTop()-5600)/900);
   }
   else{
-    if($(this).scrollTop()<7600){
+    if($(this).scrollTop()<5240){
     $("#div9").css("left", (200));
   }
   else{
-    $("#div9").css("left", (7600-$(window).scrollTop()));
-    $("#div9").css("opacity",1-($(window).scrollTop()-7600)/900);
+    $("#div9").css("left", (5240-$(window).scrollTop()));
+    $("#div9").css("opacity",1-($(window).scrollTop()-5240)/900);
   }
   }
   });

@@ -1,6 +1,10 @@
 @font-face{
   font-family:"Multicolore";
   src:url("pirulen rg.ttf") format("truetype");
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Varela', sans-serif;
 }
 
 body{
@@ -43,7 +47,7 @@ body{
 
 /* for text */
 #div1 {
-    width:35%;
+    width:70%;
     height:20%;
     background-color: #00000000;
     position: fixed;
@@ -59,7 +63,7 @@ body{
 
 #div2 {
     visibility:hidden;
-    width:35%;
+    width:50%;
     height:70%;
     background-color: #00000000;
     position: fixed;
@@ -68,7 +72,7 @@ body{
     right: 8vmax;
     cursor: pointer;
     color:#ffffff;
-    text-align: center;
+    text-align: left;
     font-family: "Multicolore";
 
 }
@@ -197,7 +201,7 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #33333300;
-  z-index: 5000;
+  z-index: 7000;
   position: fixed;
   right: 0;
   font-family: "Multicolore";
@@ -216,7 +220,7 @@ body{
 .active {
   background-color: #5dbcd2;
   color: white;
-  z-index: 5000;
+  z-index: 7000;
 }
 
 .topnav .icon {
@@ -226,7 +230,7 @@ body{
 .dropdown {
   float: left;
   overflow: hidden;
-  z-index: 5000;
+  z-index: 7000;
 }
 
 .dropdown .dropbtn {
@@ -238,7 +242,7 @@ body{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  z-index: 5000;
+  z-index: 7000;
 }
 
 .dropdown-content {
@@ -247,7 +251,7 @@ body{
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 5000;
+  z-index: 7001;
 }
 
 .dropdown-content a {
@@ -311,7 +315,7 @@ body{
 }
 
 /* for overlay */
-#overlay1 {
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8, #overlay9, #overlay10{
   position: fixed;
   display: none;
   width: 100%;
@@ -326,221 +330,14 @@ body{
   overflow: auto;
 }
 
-#text1{
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9, #text10{
   position: absolute;
   top: 10%;
   left: 10%;
   color: #ffffff;
   transform: translate(-5%,0);
   -ms-transform: translate(-50%,-50%);
-  font-size: 1.75vmax;
-}
-#overlay2 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text2{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay3 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text3{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay4 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text4{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay5 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text5{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay6 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text6{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay7 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text7{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay8 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text8{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay9 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text9{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
-}
-#overlay10 {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 7000;
-  cursor: pointer;
-  overflow: auto;
-}
-
-#text10{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: white;
-  transform: translate(-5%,0);
-  -ms-transform: translate(-50%,-50%);
+  font-family: 'Cabin';
 }
 
 /* responsive main text */
